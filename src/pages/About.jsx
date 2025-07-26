@@ -206,20 +206,20 @@ const About = () => {
             </div>
           ))}
         </div>
-        <div className="text-center mt-12 bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 text-white">
-          <h3 className="text-xl md:text-2xl font-semibold mb-6">Ready to Work With Us?</h3>
-          <p className="text-sm md:text-base text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Let's discuss how our team can help bring your vision to life.
-          </p>
-          <a
-            href="https://wa.me/917378751788"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-[#DB1A13] to-red-600 text-white px-5 py-2.5 text-base font-semibold rounded-full hover:from-[#b91610] hover:to-red-700 transition-all duration-300"
-          >
-            Get In Touch
-          </a>
-        </div>
+  <div className="text-center mt-12 bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-lg">
+  <h3 className="text-xl md:text-2xl font-semibold mb-6 text-gray-800">Ready to Work With Us?</h3>
+  <p className="text-sm md:text-base text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+    Let's discuss how our team can help bring your vision to life.
+  </p>
+  <a
+    href="https://wa.me/917378751788"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-gradient-to-r from-[#DB1A13] to-red-600 text-white px-5 py-2.5 text-base font-semibold rounded-full hover:from-[#b91610] hover:to-red-700 transition-all duration-300"
+  >
+    Get In Touch
+  </a>
+</div>
       </section>
     </div>
   )
