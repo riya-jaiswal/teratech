@@ -18,7 +18,7 @@ const Navbar = () => {
       
       {/* Left: Logo */}
       <div className="flex items-center">
-        <img src={logo} alt="Tetratech Logo" className="h-8 w-auto sm:h-10 md:h-12 lg:h-14 xl:h-30 2xl:h-32" /> 
+        <img src={logo} alt="Tetratech Logo" className="h-10" /> 
         <span className="text-lg sm:text-xl font-bold text-[#003366]"></span> 
       </div>
 
@@ -37,7 +37,7 @@ const Navbar = () => {
           href="https://wa.me/917378751788"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#DB1A13] text-white text-sm sm:text-lg px-2 sm:px-3 py-1.5 sm:py-2 rounded-full font-semibold shadow hover:bg-[#b91610] transition-colors"
+          className="bg-[#DB1A13] hidden md:block text-white text-sm sm:text-lg px-2 sm:px-3 py-1.5 sm:py-2 rounded-full font-semibold shadow hover:bg-[#b91610] transition-colors"
         >
           <span className="hidden sm:inline">Chat Now</span>
           <span className="sm:hidden">Chat</span>

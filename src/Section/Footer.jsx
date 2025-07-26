@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/tetratech.png'
+import logo from '../assets/tetratech white.png'
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
 
         {/* Left: Logo */}
         <div className="flex flex-col items-center md:items-start">
-          <img src={logo} alt="Tetratech Logo" className="h-35 mb-3" />
+          <img src={logo} alt="Tetratech Logo" className="h-10 mb-3" />
           <p className="text-sm">Tetratech Engineering LLP<br />
             Plot No. A130, Loni Deokar MIDC, Indapur,<br />
             Pune – 413132, Maharashtra, India
