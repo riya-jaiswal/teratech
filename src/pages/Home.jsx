@@ -37,7 +37,7 @@ const Home = () => {
               </div>
               <h4 className="text-lg font-semibold text-gray-800">Mission</h4>
             </div>
-            <p className="text-sm md:text-base text-gray-600 leading-relaxed">Deliver reliable and efficient thermal engineering solutions that power industrial growth sustainably.</p>
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">To deliver energy-efficient, automated process solutions that empower the Food, Pharma, and Cosmetic industries with innovation and reliability.</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-green-500">
             <div className="flex items-center mb-3">
@@ -49,7 +49,7 @@ const Home = () => {
               </div>
               <h4 className="text-lg font-semibold text-gray-800">Vision</h4>
             </div>
-            <p className="text-sm md:text-base text-gray-600 leading-relaxed">To be a global leader in heat exchange innovation through quality, safety, and performance excellence.</p>
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">To become a ₹100 Cr global engineering leader by 2030, driving excellence in processing technology and client-centric solutions.</p>
           </div>
         </div>
       </section>
