@@ -11,7 +11,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${bgHero})` }}
       >
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-          Innovative Heat Exchange. <br /> Reliable Engineering.
+          Engineering Excellence for Dairy, Food & Pharma Industries <br /> Food & Pharma Industries. 
         </h1>
         <Link
           to="/contact"
