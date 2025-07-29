@@ -58,7 +58,7 @@ const Home = () => {
       <section className="py-12 md:py-16 px-4 md:px-20 bg-white">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-800">Our Products</h2>
         <p className="text-base md:text-lg text-center max-w-2xl mx-auto text-gray-600 mb-12 leading-relaxed">
-          Discover our range of high-performance thermal solutions designed for industrial excellence
+          We specialize in delivering custom-engineered solutions for Dairy, Food, Beverage, Cosmetic, and Pharma industries. From pasteurizers and heat exchangers to blending systems and CIP units, our machines are designed for maximum efficiency and hygiene compliance.
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
