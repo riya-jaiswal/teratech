@@ -25,9 +25,7 @@ const Home = () => {
       <section className="py-12 md:py-16 bg-gradient-to-br from-blue-50 to-indigo-100 px-4 md:px-20">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-gray-800">About Tetratech Engineering LLP</h2>
         <p className="text-base md:text-lg text-center max-w-3xl mx-auto text-gray-700 mb-8 leading-relaxed">
-          We specialize in designing and manufacturing shell & tube heat exchangers and thermal process skids.
-          With an unwavering commitment to performance, reliability, and energy efficiency, we serve industries like
-          food processing, dairy, chemical, and renewable energy.
+          Tetra-Tech Engineering is a leading manufacturer of process systems and heat exchangers for the Dairy, Food, Pharma, and Cosmetic industries. Established in 2019 in Pune, we provide energy-efficient, automated solutions tailored to client needs. Our commitment to innovation, quality, and customer satisfaction drives productivity, sustainability, and long-term success for our partners.
         </p>
         <div className="mt-8 grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-500">
