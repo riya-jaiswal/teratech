@@ -178,51 +178,85 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 md:py-16 px-4 md:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-800">Our Core Services</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            { 
-              title: "Shell & Tube Heat Exchanger Manufacturing",
-              icon: "🔧",
-              gradient: "from-blue-500 to-blue-600"
-            },
-            { 
-              title: "Skid-Based Thermal System Design",
-              icon: "⚡",
-              gradient: "from-green-500 to-green-600"
-            },
-            { 
-              title: "Heat Exchanger Repair & Retubing",
-              icon: "🔨",
-              gradient: "from-purple-500 to-purple-600"
-            },
-            { 
-              title: "Thermal Process Engineering Consultation",
-              icon: "📊",
-              gradient: "from-orange-500 to-orange-600"
-            },
-            { 
-              title: "Customized Stainless Steel Fabrication",
-              icon: "🏭",
-              gradient: "from-red-500 to-red-600"
-            },
-            { 
-              title: "Energy-Efficient Heat Recovery",
-              icon: "♻️",
-              gradient: "from-teal-500 to-teal-600"
-            }
-          ].map((service, idx) => (
-            <div key={idx} className="group bg-white shadow-lg hover:shadow-2xl p-6 rounded-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className={`w-12 h-12 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center text-white text-xl mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                {service.icon}
-              </div>
-              <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-3 leading-tight">{service.title}</h4>
-              <div className={`h-1 w-10 bg-gradient-to-r ${service.gradient} rounded-full group-hover:w-full transition-all duration-300`}></div>
-            </div>
-          ))}
-        </div>
-      </section>
+<section className="py-12 md:py-16 px-4 md:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
+  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center text-gray-800">
+    TETRA-TECH Engineering – Company Services
+  </h2>
+  <p className="max-w-3xl mx-auto mb-10 text-center text-md md:text-lg text-gray-700 leading-relaxed">
+    TETRA-TECH Engineering (TTE) provides end-to-end automated process solutions tailored for the Food, Dairy, Pharma, Beverage, and Cosmetic industries. Our services span design, manufacturing, installation, and customization of high-performance processing equipment that meets international standards of quality, hygiene, and energy efficiency.
+  </p>
+  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-10">
+    {/* Custom Machine Design & Manufacturing */}
+    <div className="bg-white shadow-lg p-6 rounded-2xl hover:shadow-2xl border border-gray-100 flex flex-col gap-2 transition-all duration-300">
+      <div className="text-blue-600 text-2xl mb-2">🛠️</div>
+      <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-1">Custom Machine Design & Manufacturing</h4>
+      <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
+        <li>Heat Exchangers</li>
+        <li>Pasteurizers</li>
+        <li>Hot Water Systems</li>
+        <li>Powder Mixing & Blending</li>
+        <li>Clean-in-Place (CIP) Modules</li>
+        <li className="pt-1 font-medium text-blue-700">
+          Custom-engineered to your process, improving efficiency & reducing waste
+        </li>
+      </ul>
+    </div>
+    {/* Turnkey Process Solutions */}
+    <div className="bg-white shadow-lg p-6 rounded-2xl hover:shadow-2xl border border-gray-100 flex flex-col gap-2 transition-all duration-300">
+      <div className="text-green-600 text-2xl mb-2">🔄</div>
+      <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-1">Turnkey Process Solutions</h4>
+      <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
+        <li>Milk & Dairy Processing Lines</li>
+        <li>Juice & Beverage Production</li>
+        <li>Ready-to-Eat Food Solutions</li>
+        <li>Chemical & Pharmaceutical Handling</li>
+        <li>Pre-heaters, chillers, aseptic & food piping skids</li>
+        <li className="pt-1 font-medium text-green-700">
+          Complete lines — from concept to commissioning
+        </li>
+      </ul>
+    </div>
+    {/* Heat Transfer & Blending Expertise */}
+    <div className="bg-white shadow-lg p-6 rounded-2xl hover:shadow-2xl border border-gray-100 flex flex-col gap-2 transition-all duration-300">
+      <div className="text-purple-600 text-2xl mb-2">🌡️</div>
+      <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-1">Heat Transfer & Blending Expertise</h4>
+      <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
+        <li>Advanced thermal systems</li>
+        <li>High-efficiency blending solutions</li>
+        <li>For chemical, petrochemical, agrochemical, and pharmaceutical industries</li>
+        <li className="pt-1 font-medium text-purple-700">
+          Energy-optimized, reliable & hygienic systems
+        </li>
+      </ul>
+    </div>
+    {/* Industry-Specific Engineering Consultation */}
+    <div className="bg-white shadow-lg p-6 rounded-2xl hover:shadow-2xl border border-gray-100 flex flex-col gap-2 transition-all duration-300">
+      <div className="text-orange-600 text-2xl mb-2">🤝</div>
+      <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-1">Industry-Specific Engineering Consultation</h4>
+      <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
+        <li>Process optimization consulting</li>
+        <li>System integration & technical support</li>
+        <li>After-sales and maintenance assistance</li>
+        <li className="pt-1 font-medium text-orange-700">
+          Boost productivity, hygiene, and ROI — your technical partner
+        </li>
+      </ul>
+    </div>
+  </div>
+  {/* Why Choose TETRA-TECH */}
+  <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl p-6 sm:p-8 shadow-lg mt-8">
+    <h3 className="font-semibold text-base md:text-xl mb-4 text-gray-800 flex items-center justify-center gap-2">
+      <span>🌟</span>Why Choose TETRA-TECH?
+    </h3>
+    <ul className="grid md:grid-cols-2 gap-3 text-gray-700 text-sm md:text-base list-disc list-inside">
+      <li><strong>5,000 sq.ft</strong> modern facility near Pune, Maharashtra</li>
+      <li><strong>5+ years</strong> hands-on industry experience</li>
+      <li>Export-quality machinery and custom-engineered systems</li>
+      <li>Client-centric approach & robust service network</li>
+    </ul>
+  </div>
+</section>
+
 
       {/* FAQ Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-indigo-50 to-purple-50 px-4 md:px-20">
