@@ -67,9 +67,9 @@ const Home = () => {
             <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
               🔄
             </div>
-            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 text-center">CIP & Hot Water Systems</h3>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 text-center">Comprehensive Process Solutions</h3>
             <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed text-center">
-              High-efficiency heat transfer solutions with robust design for demanding industrial applications.
+              We specialize in delivering custom-engineered solutions for Dairy, Food, Beverage, Cosmetic, and Pharma industries. From pasteurizers and heat exchangers to blending systems and CIP units, our machines are designed for maximum efficiency and hygiene compliance.
             </p>
             <div className="space-y-2 text-xs md:text-sm text-gray-600">
               <div className="flex items-center">
