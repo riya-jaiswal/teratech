@@ -55,143 +55,174 @@ const Home = () => {
       </section>
 
       {/* Products Section */}
-<section className="py-12 md:py-16 px-4 md:px-20 bg-white">
-  <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-gray-800">Our Products</h2>
-  {/* Product Overview */}
-  <div className="max-w-3xl mx-auto mb-10 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-6 md:p-8 text-center shadow-lg border-l-4 border-blue-500">
-    <h3 className="font-semibold text-xl md:text-2xl mb-2 text-gray-800">Product Overview</h3>
-    <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-      <strong>TETRA-TECH Engineering</strong> is a specialized manufacturer and exporter of advanced machinery and systems for the Dairy, Food, Pharma, Beverage, and Cosmetic industries. With a sharp focus on innovation, energy efficiency, and automation, our products are engineered to optimize productivity, reliability, and hygiene standards for your manufacturing needs.
-    </p>
-  </div>
+      <section className="py-12 md:py-16 px-4 md:px-20 bg-white">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-800">Our Products</h2>
+        <p className="text-base md:text-lg text-center max-w-2xl mx-auto text-gray-600 mb-12 leading-relaxed">
+          We specialize in delivering custom-engineered solutions for Dairy, Food, Beverage, Cosmetic, and Pharma industries. From pasteurizers and heat exchangers to blending systems and CIP units, our machines are designed for maximum efficiency and hygiene compliance.
+        </p>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {/* Product 1 */}
+          <div className="group bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-200">
+            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
+              🔄
+            </div>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 text-center">Comprehensive Process Solutions</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed text-center">
+              We specialize in delivering custom-engineered solutions for Dairy, Food, Beverage, Cosmetic, and Pharma industries. From pasteurizers and heat exchangers to blending systems and CIP units, our machines are designed for maximum efficiency and hygiene compliance.
+            </p>
+            <div className="space-y-2 text-xs md:text-sm text-gray-600">
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>TEMA Standards Compliant</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>Custom Tube Configurations</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                <span>Corrosion Resistant Materials</span>
+              </div>
+            </div>
+          </div>
 
-  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-10">
-    {/* Existing Product Feature Cards (as in your code above)... */}
-    {/* Product 1 to Product 4 */}
-    {/* ... */}
-  </div>
+          {/* Product 2 */}
+          <div className="group bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-green-200">
+            <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
+              ⚙️
+            </div>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 text-center">Thermal Process Skids</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed text-center">
+              Complete skid-mounted thermal systems for streamlined installation and operation.
+            </p>
+            <div className="space-y-2 text-xs md:text-sm text-gray-600">
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                <span>Plug & Play Installation</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                <span>Integrated Control Systems</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                <span>Space-Optimized Design</span>
+              </div>
+            </div>
+          </div>
 
-  {/* Products Section */}
-<section className="py-12 md:py-16 px-4 md:px-20 bg-white">
-  <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-gray-800">Our Products</h2>
+          {/* Product 3 */}
+          <div className="group bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-purple-200">
+            <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
+              🔧
+            </div>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 text-center">Heat Recovery Systems</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed text-center">
+              Energy-efficient waste heat recovery solutions to optimize your process economics.
+            </p>
+            <div className="space-y-2 text-xs md:text-sm text-gray-600">
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                <span>Up to 90% Heat Recovery</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                <span>Reduced Energy Costs</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                <span>Environmental Compliance</span>
+              </div>
+            </div>
+          </div>
 
-  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-10">
-    {/* ...Product feature cards as before (Product 1–4)... */}
-  </div>
+          {/* Product 4 */}
+          <div className="group bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-orange-200">
+            <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center text-white text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
+              🏭
+            </div>
+            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 text-center">Stainless Steel Fabrication</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed text-center">
+              Custom stainless steel components and assemblies for food-grade and pharmaceutical applications.
+            </p>
+            <div className="space-y-2 text-xs md:text-sm text-gray-600">
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                <span>Food Grade Finish</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                <span>316L Stainless Steel</span>
+              </div>
+              <div className="flex items-center">
+                <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                <span>Precision Welding</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  {/* Product Lines (Key Products): */}
-  <div className="max-w-5xl mx-auto">
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {/* CIP Systems */}
-      <div className="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col gap-2 hover:shadow-xl transition">
-        <h4 className="font-semibold text-lg text-blue-700 flex items-center gap-2 mb-1">
-          <span>🧼 CIP (Clean-in-Place) Systems</span>
-        </h4>
-        <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-          <li>Portable CIP Module — manual/automatic, ideal for small installations</li>
-          <li>Fixed CIP Systems — automatic, single-line cleaning for mid-size ops</li>
-          <li>Modular CIP Systems — fully automatic, for large-scale multi-line operations</li>
-        </ul>
-      </div>
-      {/* ...Repeat for other product categories as before... */}
-    </div>
-  </div>
-
-  {/* Call to Action */}
-  <div className="text-center mt-12">
-    <Link
-      to="/products"
-      className="inline-flex items-center bg-gradient-to-r from-[#DB1A13] to-red-600 text-white px-8 py-3 rounded-full font-semibold hover:from-[#b91610] hover:to-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
-    >
-      View All Products
-      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-      </svg>
-    </Link>
-  </div>
-</section>
-
-
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <Link
+            to="/products"
+            className="inline-flex items-center bg-gradient-to-r from-[#DB1A13] to-red-600 text-white px-8 py-3 rounded-full font-semibold hover:from-[#b91610] hover:to-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            View All Products
+            <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </div>
+      </section>
 
       {/* Services Section */}
-<section className="py-12 md:py-16 px-4 md:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
-  <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center text-gray-800">
-    TETRA-TECH Engineering – Company Services
-  </h2>
-  <p className="max-w-3xl mx-auto mb-10 text-center text-md md:text-lg text-gray-700 leading-relaxed">
-    TETRA-TECH Engineering (TTE) provides end-to-end automated process solutions tailored for the Food, Dairy, Pharma, Beverage, and Cosmetic industries. Our services span design, manufacturing, installation, and customization of high-performance processing equipment that meets international standards of quality, hygiene, and energy efficiency.
-  </p>
-  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-10">
-    {/* Custom Machine Design & Manufacturing */}
-    <div className="bg-white shadow-lg p-6 rounded-2xl hover:shadow-2xl border border-gray-100 flex flex-col gap-2 transition-all duration-300">
-      <div className="text-blue-600 text-2xl mb-2">🛠️</div>
-      <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-1">Custom Machine Design & Manufacturing</h4>
-      <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
-        <li>Heat Exchangers</li>
-        <li>Pasteurizers</li>
-        <li>Hot Water Systems</li>
-        <li>Powder Mixing & Blending</li>
-        <li>Clean-in-Place (CIP) Modules</li>
-        <li className="pt-1 font-medium text-blue-700">
-          Custom-engineered to your process, improving efficiency & reducing waste
-        </li>
-      </ul>
-    </div>
-    {/* Turnkey Process Solutions */}
-    <div className="bg-white shadow-lg p-6 rounded-2xl hover:shadow-2xl border border-gray-100 flex flex-col gap-2 transition-all duration-300">
-      <div className="text-green-600 text-2xl mb-2">🔄</div>
-      <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-1">Turnkey Process Solutions</h4>
-      <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
-        <li>Milk & Dairy Processing Lines</li>
-        <li>Juice & Beverage Production</li>
-        <li>Ready-to-Eat Food Solutions</li>
-        <li>Chemical & Pharmaceutical Handling</li>
-        <li>Pre-heaters, chillers, aseptic & food piping skids</li>
-        <li className="pt-1 font-medium text-green-700">
-          Complete lines — from concept to commissioning
-        </li>
-      </ul>
-    </div>
-    {/* Heat Transfer & Blending Expertise */}
-    <div className="bg-white shadow-lg p-6 rounded-2xl hover:shadow-2xl border border-gray-100 flex flex-col gap-2 transition-all duration-300">
-      <div className="text-purple-600 text-2xl mb-2">🌡️</div>
-      <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-1">Heat Transfer & Blending Expertise</h4>
-      <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
-        <li>Advanced thermal systems</li>
-        <li>High-efficiency blending solutions</li>
-        <li>For chemical, petrochemical, agrochemical, and pharmaceutical industries</li>
-        <li className="pt-1 font-medium text-purple-700">
-          Energy-optimized, reliable & hygienic systems
-        </li>
-      </ul>
-    </div>
-    {/* Industry-Specific Engineering Consultation */}
-    <div className="bg-white shadow-lg p-6 rounded-2xl hover:shadow-2xl border border-gray-100 flex flex-col gap-2 transition-all duration-300">
-      <div className="text-orange-600 text-2xl mb-2">🤝</div>
-      <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-1">Industry-Specific Engineering Consultation</h4>
-      <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
-        <li>Process optimization consulting</li>
-        <li>System integration & technical support</li>
-        <li>After-sales and maintenance assistance</li>
-        <li className="pt-1 font-medium text-orange-700">
-          Boost productivity, hygiene, and ROI — your technical partner
-        </li>
-      </ul>
-    </div>
-  </div>
-  {/* Why Choose TETRA-TECH */}
-  <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl p-6 sm:p-8 shadow-lg mt-8">
-    <h3 className="font-semibold text-base md:text-xl mb-4 text-gray-800 flex items-center justify-center gap-2">
-      <span>🌟</span>Why Choose TETRA-TECH?
-    </h3>
-    <ul className="grid md:grid-cols-2 gap-3 text-gray-700 text-sm md:text-base list-disc list-inside">
-      <li><strong>5,000 sq.ft</strong> modern facility near Pune, Maharashtra</li>
-      <li><strong>5+ years</strong> hands-on industry experience</li>
-      <li>Export-quality machinery and custom-engineered systems</li>
-      <li>Client-centric approach & robust service network</li>
-    </ul>
-  </div>
-</section>
+      <section className="py-12 md:py-16 px-4 md:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-800">Our Core Services</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { 
+              title: "Shell & Tube Heat Exchanger Manufacturing",
+              icon: "🔧",
+              gradient: "from-blue-500 to-blue-600"
+            },
+            { 
+              title: "Skid-Based Thermal System Design",
+              icon: "⚡",
+              gradient: "from-green-500 to-green-600"
+            },
+            { 
+              title: "Heat Exchanger Repair & Retubing",
+              icon: "🔨",
+              gradient: "from-purple-500 to-purple-600"
+            },
+            { 
+              title: "Thermal Process Engineering Consultation",
+              icon: "📊",
+              gradient: "from-orange-500 to-orange-600"
+            },
+            { 
+              title: "Customized Stainless Steel Fabrication",
+              icon: "🏭",
+              gradient: "from-red-500 to-red-600"
+            },
+            { 
+              title: "Energy-Efficient Heat Recovery",
+              icon: "♻️",
+              gradient: "from-teal-500 to-teal-600"
+            }
+          ].map((service, idx) => (
+            <div key={idx} className="group bg-white shadow-lg hover:shadow-2xl p-6 rounded-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div className={`w-12 h-12 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center text-white text-xl mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                {service.icon}
+              </div>
+              <h4 className="font-semibold text-base md:text-lg text-gray-800 mb-3 leading-tight">{service.title}</h4>
+              <div className={`h-1 w-10 bg-gradient-to-r ${service.gradient} rounded-full group-hover:w-full transition-all duration-300`}></div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <section className="py-12 md:py-16 bg-gradient-to-br from-indigo-50 to-purple-50 px-4 md:px-20">
