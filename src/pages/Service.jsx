@@ -1,79 +1,130 @@
-import React from 'react'
+import React from 'react';
+import bgHero from '../assets/Food-Beverages-and-Agriculture.webp';
+
+const services = [
+  "Custom Machine Design",
+  "Automated Process Solutions",
+  "Energy-Efficient Engineering",
+  "Turnkey Project Execution",
+  "Industrial Skid Systems",
+  "After-Sales Support",
+];
 
 const products = [
+  "Portable & Modular CIP Systems",
+  "PHE & Tubular Pasteurizers",
+  "Hot Water Generator",
+  "Ribbon Blender & Powder Mixers",
+  "Shell & Tube Heat Exchangers",
+  "Chilling Units",
+];
+
+const steps = [
   {
-    id: 1,
-    name: 'Cloud Integration Suite',
-    description: 'Seamlessly connect and manage multi-cloud environments with our all-in-one integration platform.',
-    price: '$49/mo',
-    imageUrl: '/images/cloud-integration.png'
+    title: "1. Consultation",
+    desc: "We begin with a deep dive into your unique process requirements and goals.",
   },
   {
-    id: 2,
-    name: 'AI Analytics Dashboard',
-    description: 'Gain real-time insights with AI-powered analytics and customizable visual reports.',
-    price: '$99/mo',
-    imageUrl: '/images/ai-analytics.png'
+    title: "2. Custom Design",
+    desc: "Our team crafts tailored machine and system designs based on your specific needs.",
   },
   {
-    id: 3,
-    name: 'Security Monitoring',
-    description: '24/7 threat detection and response to protect your infrastructure and data.',
-    price: '$79/mo',
-    imageUrl: '/images/security-monitoring.png'
+    title: "3. Manufacturing",
+    desc: "We manufacture high-performance equipment in our modern facility.",
   },
   {
-    id: 4,
-    name: 'Mobile App Builder',
-    description: 'Drag-and-drop builder to create iOS & Android apps without code.',
-    price: '$59/mo',
-    imageUrl: '/images/mobile-app-builder.png'
-  }
-]
+    title: "4. Installation & Support",
+    desc: "Our experts ensure smooth installation and provide ongoing technical support.",
+  },
+];
 
 const Service = () => {
   return (
-    <div className="text-gray-800">
-      {/* ... existing Hero, About, Contact sections ... */}
+    <div className="text-gray-800 bg-white">
 
-      {/* Products Section */}
-      <section id="products" className="py-12 md:py-16 bg-white px-4 md:px-20">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-800">
-          Our <span className="text-[#DB1A13]">Products</span>
-        </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {products.map(product => (
-            <div
-              key={product.id}
-              className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transition-all duration-300"
-            >
-              <img
-                src={product.imageUrl}
-                alt={product.name}
-                className="w-full h-40 object-contain mb-4"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {product.name}
-              </h3>
-              <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                {product.description}
-              </p>
-              <div className="flex items-center justify-between">
-                <span className="text-lg font-bold text-[#DB1A13]">
-                  {product.price}
-                </span>
-                <button
-                  className="bg-[#DB1A13] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#b91610] transition"
-                >
-                  Learn More
-                </button>
-              </div>
-            </div>
-          ))}
+      {/* HERO SECTION */}
+      <section
+        className="relative h-[70vh] flex items-center justify-center bg-cover bg-center text-white"
+        style={{ backgroundImage: `url(${bgHero})` }}
+      >
+        <div className="absolute inset-0 bg-[#003366]/80 z-0"></div>
+        <div className="relative z-10 text-center px-6 max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Services & Solutions</h1>
+          <p className="text-lg mb-6">Delivering cutting-edge process systems for the Food, Pharma & Beverage industry.</p>
+          <a href="/contact" className="bg-yellow-400 text-[#003366] px-6 py-3 font-semibold rounded shadow hover:bg-yellow-300 transition">
+            Request a Quote
+          </a>
         </div>
       </section>
-    </div>
-  )
-}
 
-export default Service
+      {/* SERVICE SECTION */}
+      <section className="py-16 px-6 bg-gray-100">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-[#003366] mb-10">Our Core Services</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {services.map((service, idx) => (
+              <div key={idx} className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                <h3 className="text-xl font-semibold text-[#003366] mb-2">{service}</h3>
+                <p className="text-sm text-gray-600">We act as your extended engineering arm with tailored solutions.</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PRODUCT SECTION */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-[#003366] mb-10">Key Products We Offer</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {products.map((product, idx) => (
+              <div key={idx} className="bg-gray-50 shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                <h3 className="text-xl font-semibold text-[#003366] mb-2">{product}</h3>
+                <p className="text-sm text-gray-600">Designed for performance, hygiene, and operational efficiency.</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HOW WE WORK SECTION */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-[#003366] mb-10">How We Work</h2>
+          <p className="text-base text-gray-600 max-w-2xl mx-auto mb-12">
+            At Tetra-Tech, we follow a collaborative, transparent, and efficient process to ensure your success at every stage.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-8">
+            {steps.map((step, idx) => (
+              <div key={idx} className="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+                <h3 className="text-xl font-semibold text-[#DB1A13] mb-2">{step.title}</h3>
+                <p className="text-gray-600 text-sm">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="py-16 bg-white text-center px-6">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#003366] mb-4">Ready to Discuss Your Project?</h2>
+          <p className="text-base text-gray-600 mb-8">
+            Schedule a call with our experts to explore how we can support your business with custom-engineered solutions.
+          </p>
+          <a
+            href="https://wa.me/917378751788"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-[#003366] font-semibold px-6 py-3 rounded-full shadow transition"
+          >
+            📞 Schedule a Call
+          </a>
+        </div>
+      </section>
+
+    </div>
+  );
+};
+
+export default Service;

@@ -7,8 +7,12 @@ const Home = () => {
     <div className="bg-white text-gray-800">
 
       {/* HERO SECTION */}
-      <section className="bg-[#003366] text-white h-[90vh] flex items-center justify-center px-6">
-        <div className="text-center max-w-3xl">
+      <section
+        className="relative h-[90vh] flex items-center justify-center px-6 text-white bg-cover bg-center"
+        style={{ backgroundImage: `url(${bgHero})` }}
+      >
+        <div className="absolute inset-0 bg-[#003366]/80 z-0"></div>
+        <div className="text-center max-w-3xl z-10">
           <h1 className="text-5xl font-bold mb-6 leading-tight">Engineering Excellence for Food, Pharma & Beverage</h1>
           <p className="text-lg mb-6">Custom Machines | Process Systems | Automation Solutions</p>
           <a href="/contact" className="bg-yellow-400 hover:bg-yellow-300 text-[#003366] px-6 py-3 font-semibold rounded shadow transition">Get a Quote</a>
@@ -113,85 +117,84 @@ const Home = () => {
         </div>
       </section>
 
-{/* CONTACT SECTION */}
-<section className="py-20 px-6 bg-white text-gray-800">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+      {/* CONTACT SECTION */}
+      <section className="py-20 px-6 bg-white text-gray-800">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
 
-    {/* Contact Details */}
-    <div className="bg-[#003366] text-white p-8 rounded-xl shadow-lg">
-      <h2 className="text-3xl font-bold mb-6">Let’s Talk About Your Project</h2>
-      <p className="mb-6 text-gray-100">Have questions or need a custom solution? Reach out to us today.</p>
+          {/* Contact Details */}
+          <div className="bg-[#003366] text-white p-8 rounded-xl shadow-lg">
+            <h2 className="text-3xl font-bold mb-6">Let’s Talk About Your Project</h2>
+            <p className="mb-6 text-gray-100">Have questions or need a custom solution? Reach out to us today.</p>
 
-      <div className="space-y-6 text-base">
-        <div className="flex items-start space-x-4">
-          <span className="text-yellow-400 text-2xl">📍</span>
-          <div>
-            <p className="font-semibold">Address:</p>
-            <p>Industrial Area, Pune, Maharashtra, India</p>
+            <div className="space-y-6 text-base">
+              <div className="flex items-start space-x-4">
+                <span className="text-yellow-400 text-2xl">📍</span>
+                <div>
+                  <p className="font-semibold">Address:</p>
+                  <p>Industrial Area, Pune, Maharashtra, India</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <span className="text-yellow-400 text-2xl">📞</span>
+                <div>
+                  <p className="font-semibold">Phone:</p>
+                  <p>+91-9876543210</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <span className="text-yellow-400 text-2xl">✉️</span>
+                <div>
+                  <p className="font-semibold">Email:</p>
+                  <p>info@tetratech.com</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <span className="text-yellow-400 text-2xl">🕒</span>
+                <div>
+                  <p className="font-semibold">Hours:</p>
+                  <p>Mon–Sat: 9:00 AM – 6:00 PM</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="flex items-start space-x-4">
-          <span className="text-yellow-400 text-2xl">📞</span>
-          <div>
-            <p className="font-semibold">Phone:</p>
-            <p>+91-9876543210</p>
-          </div>
-        </div>
-        <div className="flex items-start space-x-4">
-          <span className="text-yellow-400 text-2xl">✉️</span>
-          <div>
-            <p className="font-semibold">Email:</p>
-            <p>info@tetratechengineering.com</p>
-          </div>
-        </div>
-        <div className="flex items-start space-x-4">
-          <span className="text-yellow-400 text-2xl">🕒</span>
-          <div>
-            <p className="font-semibold">Hours:</p>
-            <p>Mon–Sat: 9:00 AM – 6:00 PM</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    {/* Contact Form */}
-    <div className="bg-gray-100 p-8 rounded-xl shadow-lg">
-      <h3 className="text-2xl font-bold text-[#003366] mb-6">Send a Message</h3>
-      <form className="space-y-5">
-        <div className="grid sm:grid-cols-2 gap-4">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#003366]"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#003366]"
-          />
-        </div>
-        <input
-          type="text"
-          placeholder="Subject"
-          className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#003366]"
-        />
-        <textarea
-          rows="5"
-          placeholder="Your Message"
-          className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#003366]"
-        ></textarea>
-        <button
-          type="submit"
-          className="w-full bg-[#003366] text-white font-semibold py-3 px-6 rounded hover:bg-[#002244] transition"
-        >
-          Send Message
-        </button>
-      </form>
-    </div>
-    
-  </div>
-</section>
+          {/* Contact Form */}
+          <div className="bg-gray-100 p-8 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-bold text-[#003366] mb-6">Send a Message</h3>
+            <form className="space-y-5">
+              <div className="grid sm:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#003366]"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#003366]"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#003366]"
+              />
+              <textarea
+                rows="5"
+                placeholder="Your Message"
+                className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#003366]"
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full bg-[#003366] text-white font-semibold py-3 px-6 rounded hover:bg-[#002244] transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
 
+        </div>
+      </section>
 
     </div>
   );
