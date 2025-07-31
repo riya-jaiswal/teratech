@@ -131,14 +131,14 @@ const Home = () => {
                 <span className="text-yellow-400 text-2xl">📍</span>
                 <div>
                   <p className="font-semibold">Address:</p>
-                  <p>Industrial Area, Pune, Maharashtra, India</p>
+                  <p>Tetratech Engineering LLP Plot No. A130,LONI DEOKAR MIDC,INDAPUR Industrial Estate,Pune – 413132,Maharashtra, India.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <span className="text-yellow-400 text-2xl">📞</span>
                 <div>
                   <p className="font-semibold">Phone:</p>
-                  <p>+91-9876543210</p>
+                  <p>+91-7378751788</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
